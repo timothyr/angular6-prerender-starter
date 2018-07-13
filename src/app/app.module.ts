@@ -6,8 +6,11 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import {TransferHttpCacheModule} from '@nguniversal/common';
 
-import { MatButtonModule } from '@angular/material';
 import { ShellComponent } from './shell/shell.component';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { MatButtonModule, MatToolbarModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,8 @@ import { ShellComponent } from './shell/shell.component';
   ],
   imports: [
     MatButtonModule,
+    MatToolbarModule,
+    FlexLayoutModule,
     
     BrowserModule.withServerTransition({appId: 'my-app'}),
     RouterModule.forRoot([

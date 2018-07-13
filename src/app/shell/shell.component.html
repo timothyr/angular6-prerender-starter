@@ -1,0 +1,62 @@
+<mat-toolbar class="header-item" style="margin: 0px !important" fxLayout="row" fxFlexAlign="center center">
+    <!-- Fill Left Side -->
+    <div fxFlex fxFlexFill></div>
+
+    <!-- Toolbar Center Container -->
+    <div class="container" fxFlex="50" style="display: flex">
+
+        <!-- Home Button -->
+        <button
+            type="button"
+            routerLink="/"
+            aria-label="Home Button"
+            mat-button
+            class="header-item">
+            <span>Universal Prerender Demo</span>
+        </button>
+
+        <!-- Lazy Button -->
+        <button 
+            fxShow="false"
+            fxShow.gt-xs
+            type="button"
+            aria-label="Lazy Button"
+            routerLink="/lazy"
+            mat-button
+            class="header-item">
+            <span>Lazy</span>
+        </button>
+
+        <!-- Lazy Nested Button -->
+        <button 
+            fxShow="false"
+            fxShow.gt-xs
+            type="button"
+            aria-label="Lazy Nested Button"
+            routerLink="/lazy/nested"
+            mat-button
+            class="header-item">
+            <span>Lazy Nested</span>
+        </button>
+
+        <!-- Make a gap between buttons on left and right -->
+        <span class="fill-remaining-space"></span>
+
+        <!-- Options Button -->
+        <button
+            fxShow="false"
+            fxShow.gt-xs    
+            type="button"
+            aria-label="Options Button"
+            mat-button
+            class="header-item">
+            <span>Options</span>
+        </button>
+
+    </div>
+    <!-- End of Toolbar Center Container -->
+
+    <!-- Fill Right Side -->
+    <div fxFlex fxFlexFill></div>
+
+  </mat-toolbar>
